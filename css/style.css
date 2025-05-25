@@ -21,7 +21,6 @@ header {
     justify-content: space-between; /* Espaça os elementos horizontalmente */
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
     box-sizing: border-box; /* Evita transbordamento */
-     flex-wrap: nowrap;
 }
 
 
@@ -58,103 +57,26 @@ header nav ul li a:hover {
     flex-shrink: 0; /* Evita que a logo seja redimensionada */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Menu links */
-.menu-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 15px;
-}
-
-
-/* Ícones (conta, favoritos, sacola) */
-.icones {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0; /* Não deixa encolher */
-}
-
-.icones img {
-  width: 30px;
-  height: auto;
-  cursor: pointer;
-}
-
-/* === MOBILE === */
-@media (max-width: 768px) {
-  .logo {
-    display: none; /* Esconde a logo no celular */
-  }
-  
-  /* O resto do CSS continua igual */
-  .Cabeçalho {
-    flex-wrap: nowrap;
-    padding: 5px 10px;
-  }
-
-  .menu-links {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .menu-links.active {
+nav ul {
+    list-style: none;
     display: flex;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    padding: 10px 0;
-    gap: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 10;
-  }
+    margin: 0;
+    padding: 0;
 }
 
+nav ul li {
+    margin-right: 15px; /* Ajusta espaçamento entre itens */
+    color: black;
+}
 
+nav ul li:last-child {
+    margin-right: 0; /* Remove margem do último item */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
 
 .icones {
     display: flex;
@@ -345,70 +267,59 @@ footer{
 
 
 
-/* Esconde o botão do menu no desktop */
 .menu-toggle {
-    display: none;
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    padding: 10px 15px;
+    display: none; /* Isso esconde o menu no desktop */
 }
 
-/* Remove o display flex do menu padrão para o mobile */
-nav ul.menu-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
 
-/* Estiliza os links do menu */
-nav ul.menu-links li {
-    margin-right: 15px;
-}
-
-nav ul.menu-links li:last-child {
-    margin-right: 0;
-}
-
-nav ul.menu-links li a {
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    transition: background-color 0.3s, text-decoration 0.3s;
-}
-
-nav ul.menu-links li a:hover {
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-}
-
-/* ======= MOBILE ======= */
 @media (max-width: 768px) {
-    /* Mostrar o botão Menu no mobile */
-    .menu-toggle {
-        display: block;
-    }
-    /* Esconder o menu padrão inicialmente */
-    nav ul.menu-links {
+    nav {
         display: none;
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostra o menu hambúrguer no celular */
         flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        height: 4px;
+        background: #000;
+        border-radius: 2px;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
         width: 100%;
         background-color: #f9f9f9;
-        position: absolute;
-        top: 60px; /* ajuste conforme seu header */
-        left: 0;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        border-radius: 0 0 10px 10px;
-        z-index: 1000;
+        z-index: 999;
+        text-align: left;
+        padding: 20px 10px;
     }
-    nav ul.menu-links li {
-        margin: 10px 0;
-        padding: 0 20px;
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
-    /* Quando a classe 'active' for adicionada, mostra o menu */
-    nav ul.menu-links.active {
-        display: flex;
+
+    .mobile-menu ul li {
+        margin: 15px 0;
+    }
+
+    .mobile-menu ul li a {
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
     }
 }

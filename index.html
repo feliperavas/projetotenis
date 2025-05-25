@@ -11,26 +11,32 @@
     <header>
         <div class="Cabeçalho">
            <a href="index.html"><img src="fotos/logo_wip-removebg-preview.png" alt="Logo marca Wip" class="logo"></a>
-          
-           <nav>
-  <button class="menu-toggle">///</button>
-  <ul class="menu-links">
-      <li><a href="lançamentos.html">Lançamentos</a></li>
-      <li><a href="Ofertas.html">Ofertas</a></li>
-      <li><a href="Man.html">Masculino</a></li>
-      <li><a href="womman.html">Feminino</a></li>
-      <li><a href="kids.html">Infantil</a></li>
-  </ul>
-</nav>
-<script>const menuToggle = document.querySelector('.menu-toggle');
-const menuLinks = document.querySelector('.menu-links');
+           <!-- Ícone de Menu Hamburguer (só aparece no mobile) -->
+<div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <!-- Menu lateral para celular -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="lançamentos.html">Lançamentos</a></li>
+        <li><a href="Ofertas.html">Ofertas</a></li>
+        <li><a href="Man.html">Masculino</a></li>
+        <li><a href="womman.html">Feminino</a></li>
+        <li><a href="kids.html">Infantil</a></li>
+    </ul>
+</div>
+</div>
 
-menuToggle.addEventListener('click', () => {
-  menuLinks.classList.toggle('active');
-  const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
-  menuToggle.setAttribute('aria-expanded', !expanded);
-});
-</script>
+            <nav>
+                <ul>
+                    <li><a href="lançamentos.html">Lançamentos</a></li>
+                    <li><a href="Ofertas.html">Ofertas</a></li>
+                    <li><a href="Man.html">Masculino</a></li>
+                    <li><a href="womman.html">Feminino</a></li>
+                    <li><a href="kids.html">Infantil</a></li>
+                </ul>
+            </nav>
           
             <div class="barra-de-pesquisa">
                 <input type="text" placeholder="Procure modelos aqui...">
@@ -76,3 +82,4 @@ menuToggle.addEventListener('click', () => {
           
 </body>
 </html>
+
