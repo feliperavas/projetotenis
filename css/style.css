@@ -100,31 +100,28 @@ header nav ul li a:hover {
 
 /* === MOBILE === */
 @media (max-width: 768px) {
+  .logo {
+    display: none; /* Esconde a logo no celular */
+  }
+  
+  /* O resto do CSS continua igual */
   .Cabeçalho {
-    /* mantém todos numa linha */
     flex-wrap: nowrap;
     padding: 5px 10px;
   }
 
-  .logo {
-    width: 80px; /* logo maior no mobile */
-    position: absolute;
-    left: 5px; /* Fixa a logo à esquerda */
-  }
-
   .menu-links {
-    display: none; /* Esconder links no mobile, só mostrar menu toggle */
+    display: none;
   }
 
   .menu-toggle {
-    display: block; /* Mostrar botão menu hamburguer */
+    display: block;
   }
 
-  /* Quando menu ativado, mostra lista vertical */
   .menu-links.active {
     display: flex;
     position: absolute;
-    top: 60px; /* Ajustar conforme seu header */
+    top: 60px;
     left: 0;
     right: 0;
     background: white;
