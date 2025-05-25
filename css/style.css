@@ -21,6 +21,7 @@ header {
     justify-content: space-between; /* Espaça os elementos horizontalmente */
     width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
     box-sizing: border-box; /* Evita transbordamento */
+     flex-wrap: nowrap;
 }
 
 
@@ -56,6 +57,56 @@ header nav ul li a:hover {
     height: auto; /* Mantém proporção da imagem */
     flex-shrink: 0; /* Evita que a logo seja redimensionada */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE - reorganizar e aumentar logo */
+@media (max-width: 768px) {
+    .Cabeçalho {
+      
+    flex-wrap: wrap;
+    }
+    .logo {
+           order: 1;
+       width: 150px; /* Logo maior no mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .icones {
