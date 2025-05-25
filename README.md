@@ -9,15 +9,15 @@ Foi desenvolvido como parte do meu aprendizado em **HTML, CSS e JavaScript**, co
 
 ## 🖼️ Preview
 
-![Preview do site](fotos/Captura%20de%20tela_25-5-2025_124441_loja-de-compra-teniss.netlify.app.jpeg) <!-- Substitua por uma imagem se tiver, senão pode remover -->
+![Preview do site](fotos/Captura%20de%20tela_25-5-2025_124441_loja-de-compra-teniss.netlify.app.jpeg)
 
 ---
 
 ## 🚀 Funcionalidades
 
-- 🛒 Interface de loja com vitrine de produtos
-- 💰 Simulação de botão de compra
-- 🎨 Layout responsivo
+- 🛒 Interface de loja com vitrine de produtos  
+- 💰 Simulação de botão de compra  
+- 🎨 Layout responsivo  
 - 📦 Organização dos produtos por seções
 
 ---
@@ -34,17 +34,22 @@ Foi desenvolvido como parte do meu aprendizado em **HTML, CSS e JavaScript**, co
 
 Com este projeto, aprendi:
 
-- Criar uma estrutura semântica com HTML
-- Estilizar páginas de forma responsiva com CSS
+- Criar uma estrutura semântica com HTML  
+- Estilizar páginas de forma responsiva com CSS  
 - Manipular eventos e elementos com JavaScript básico
 
 ---
-📄 Licença
-Este projeto está licenciado sob a MIT License.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License**.
+
 ---
+
 > "Um pequeno projeto, mas um grande passo no meu aprendizado!" 🚀  
 
 ---
-Feito com 💚 e muito estilo por **Felipe**  👟
-📍 Instagram: @rt_felipe_
-💻 GitHub: github.com/seuusuario
+
+Feito com 💚 e muito estilo por **Felipe** 👟  
+📍 Instagram: [@rt_felipe_](https://instagram.com/rt_felipe_)  
+💻 GitHub: [github.com/feliperavas](https://github.com/feliperavas)
