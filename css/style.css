@@ -108,6 +108,8 @@ header nav ul li a:hover {
 
   .logo {
     width: 200px; /* logo maior no mobile */
+    position: absolute;
+    left: 5px; /* Fixa a logo à esquerda */
   }
 
   .menu-links {
