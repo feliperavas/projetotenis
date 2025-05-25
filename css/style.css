@@ -74,16 +74,64 @@ header nav ul li a:hover {
 
 
 
-/* MOBILE - reorganizar e aumentar logo */
+/* Menu links */
+.menu-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+
+/* Ícones (conta, favoritos, sacola) */
+.icones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0; /* Não deixa encolher */
+}
+
+.icones img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* === MOBILE === */
 @media (max-width: 768px) {
-    .Cabeçalho {
-      
-    flex-wrap: wrap;
-    }
-    .logo {
-           order: 1;
-       width: 60px; /* Logo maior no mobile */
-    }
+  .Cabeçalho {
+    /* mantém todos numa linha */
+    flex-wrap: nowrap;
+    padding: 5px 10px;
+  }
+
+  .logo {
+    width: 100px; /* logo maior no mobile */
+  }
+
+  .menu-links {
+    display: none; /* Esconder links no mobile, só mostrar menu toggle */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar botão menu hamburguer */
+  }
+
+  /* Quando menu ativado, mostra lista vertical */
+  .menu-links.active {
+    display: flex;
+    position: absolute;
+    top: 60px; /* Ajustar conforme seu header */
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
 }
 
 
