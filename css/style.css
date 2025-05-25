@@ -82,7 +82,7 @@ header nav ul li a:hover {
     }
     .logo {
            order: 1;
-       width: 150px; /* Logo maior no mobile */
+       width: 60px; /* Logo maior no mobile */
     }
 }
 
