@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Cor de fundo mais clara */
+}
+
+header {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 10px 20px; /* Reduzido para ajustar o layout */
+    text-align: justify;
+    height: auto; /* Permitir ajuste dinâmico de altura */
+    width: 100%;
+    box-sizing: border-box; /* Inclui o padding no cálculo de largura */
+    overflow: hidden; /* Garante que nada saia do limite */
+}
+
+.Cabeçalho {
+    display: flex;
+    align-items: center; /* Alinha elementos verticalmente */
+    justify-content: space-between; /* Espaça os elementos horizontalmente */
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+    box-sizing: border-box; /* Evita transbordamento */
+}
+
+
+
+
+
+header nav ul li a {
+    text-decoration: none; /* Sem sublinhado padrão */
+    color: rgb(10, 10, 10); /* Cor padrão do texto */
+    padding: 5px; /* Espaçamento interno */
+    transition: background-color 0.3s, text-decoration 0.3s; /* Animação suave */
+}
+
+header nav ul li a:hover {
+    color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+.icones img {
+    background-color: white; /* Cor inicial do fundo */
+    border-radius: 50%; /* Torna o fundo circular */
+    padding: 8px; /* Espaçamento interno para destacar o ícone */
+    transition: background-color 0.3s; /* Animação suave para a mudança de cor */
+}
+
+.icones img:hover {
+    background-color: rgb(226, 226, 226); /* Cor do fundo ao passar o mouse */
+}
+
+
+.logo {
+    width: 90px;
+    height: auto; /* Mantém proporção da imagem */
+    flex-shrink: 0; /* Evita que a logo seja redimensionada */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px; /* Ajusta espaçamento entre itens */
+    color: black;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margem do último item */
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    margin-right: 20px; /* Ajustado para evitar corte */
+    overflow: hidden; /* Garante que o conteúdo não transborde */
+}
+
+.icones img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 10px; /* Ajustado para evitar corte */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    max-height: 100%; /* Garante que a imagem não ultrapasse o container */
+}
+
+.barra-de-pesquisa {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+    background-color: #e7e7e7;
+     
+    
+}
+
+.barra-de-pesquisa input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #e7e7e7;
+}
+
+.barra-de-pesquisa button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #e7e7e7;
+}
+
+.barra-de-pesquisa img {
+    width: 20px;
+    height: 20px;
+    background-color: #e7e7e7;
+}
+ 
+#video-centered {
+    display: block; /* Garante que o vídeo seja tratado como um bloco */
+    margin: 20px auto; /* 20px no topo e centralizado horizontalmente */
+    width: calc(100% - 100px); /* Reduz 50px de cada lado (100px no total) */
+    max-width: 100%; /* Impede que o vídeo ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção original do vídeo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* (Opcional) Adiciona um efeito de sombra para destaque */
+}
+
+#video-centered {
+    display: block;
+    margin: 20px auto; /* 20px no topo e centralizado horizontalmente */
+    width: calc(100% - 100px); /* Largura com 50px de margem de cada lado */
+    max-width: 100%;
+    height: auto; /* Mantém a proporção do vídeo */
+}
+
+img {
+    display: block;
+   
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 100px); /* Largura igual ao vídeo */
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+
+.container-botoes {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 50px; /* Espaço do topo da página */
+}
+
+.botao button {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.botao button:hover {
+    background-color: rgb(124, 119, 119); /* Cor de fundo ao passar o mouse */
+    color: rgb(0, 0, 0);
+}
+
+.galeria1 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-top: 40px;
+}
+
+.galeria1 img {
+    width: 300px; /* Reduz a largura das imagens */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria1 img:hover {
+    transform: scale(1.1); /* Zoom ao passar o mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombrinha leve */
+    cursor: pointer;
+}
+.corrida{
+    text-align: center;
+    margin-top: 15px;
+}
+footer{
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    position: relative; /* Permite o uso de z-index */
+    z-index: 1; /* Garante que o footer fique acima de outros elementos */
+}
+.rodape-wip {
+    background-color: #000000; /* Cor de fundo escura */
+    color: #f1f1f1; /* Texto claro para contraste */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.rodape-wip h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffffff; /* Verde vibrante, dá uma pegada esportiva */
+    text-transform: uppercase;
+}
+
+.rodape-wip p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+}
+
+.rodape-wip .copyright {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
