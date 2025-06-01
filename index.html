@@ -10,36 +10,49 @@
     <link rel="stylesheet" href="assets/css/global/header.css">
 </head>
 <body>
-    <header>
-        <div class="Cabeçalho">
-           <a href="index.html"><img src="fotos/index/logo_wip-removebg-preview.png" alt="Logo marca Wip" class="logo"></a>
-           <!-- Ícone de Menu Hamburguer (só aparece no mobile) -->
+ <header>
+  <div class="Cabeçalho">
+    <a href="index.html">
+      <img src="fotos/index/logo_wip-removebg-preview.png" alt="Logo marca Wip" class="logo">
+    </a>
 
+    <!-- Ícone de Menu Hambúrguer (só aparece no mobile) -->
+    <button class="menu-toggle" id="menu-toggle">
+      &#9776;
+    </button>
 
-            <nav>
-                <ul>
-                    <li><a href="lançamentos.html">Lançamentos</a></li>
-                    <li><a href="Ofertas.html">Ofertas</a></li>
-                    <li><a href="Man.html">Masculino</a></li>
-                    <li><a href="womman.html">Feminino</a></li>
-                    <li><a href="kids.html">Infantil</a></li>
-                </ul>
-            </nav>
-          
-            <div class="barra-de-pesquisa">
-                <input type="text" placeholder="Procure modelos aqui...">
-                <button>
-                    <img src="fotos/index/lupa.png" alt="Ícone de lupa">
-                </button>
-            </div>
-            
-          <div class="icones">
-            <a href="paginas secundarias/login.html"><img src="fotos/index/crie_sua_conta-removebg-preview (1).png" alt="Crie sua conta" style="margin-right: 10px;"></a>
-            <a href="#"><img src="fotos/index/logo_coração-removebg-preview.png" alt="Favoritos" style="margin-right: 10px;"></a>
-            <a href="#"><img src="fotos/index/logo_sacola-removebg-preview.png" alt="Compras na sacola"  style="margin-right: 30px;"></a>
-          </div>
-        </div>
-    </header>
+    <!-- Menu único para desktop e mobile -->
+    <nav id="mobile-menu">
+      <ul>
+        <li><a href="lançamentos.html">Lançamentos</a></li>
+        <li><a href="Ofertas.html">Ofertas</a></li>
+        <li><a href="Man.html">Masculino</a></li>
+        <li><a href="womman.html">Feminino</a></li>
+        <li><a href="kids.html">Infantil</a></li>
+      </ul>
+    </nav>
+
+    <div class="barra-de-pesquisa">
+      <input type="text" placeholder="Procure modelos aqui...">
+      <button>
+        <img src="fotos/index/lupa.png" alt="Ícone de lupa">
+      </button>
+    </div>
+
+    <div class="icones">
+      <a href="paginas secundarias/login.html">
+        <img src="fotos/index/crie_sua_conta-removebg-preview (1).png" alt="Crie sua conta" style="margin-right: 10px;">
+      </a>
+      <a href="#">
+        <img src="fotos/index/logo_coração-removebg-preview.png" alt="Favoritos" style="margin-right: 10px;">
+      </a>
+      <a href="#">
+        <img src="fotos/index/logo_sacola-removebg-preview.png" alt="Compras na sacola" style="margin-right: 30px;">
+      </a>
+    </div>
+  </div>
+</header>
+
     <div>
         <div>
             <video src="videos/video.mp4" id="video-centered" autoplay muted loop></video>

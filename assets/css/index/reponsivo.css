@@ -1,81 +1,38 @@
-/* Estilo padrão - desktop */
+/* Esconde botão no desktop */
 .menu-toggle {
   display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-/* Deixa o menu em linha normalmente */
-nav {
-  display: block;
-}
-
+/* Estilo do menu no mobile */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  #mobile-menu ul {
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+
+  #mobile-menu ul.show {
+    display: flex;
+  }
+
+  #mobile-menu ul li {
+    margin: 10px 20px;
+  }
+
   .Cabeçalho {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  /* Mostra o botão só no mobile */
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    margin: 10px 0;
-  }
-
-  /* Esconde o menu por padrão */
-  nav {
-    display: none;
-    width: 100%;
-  }
-
-  nav.active {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-  }
-
-  nav ul li {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .barra-de-pesquisa,
-  .icones {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px) {
-    #video-centered,
-    img[alt="Airmax"] {
-        width: 90%;
-    }
-
-    .botao button {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    .container-botoes {
-        flex-direction: column;
-        align-items: center;
-    }
 }

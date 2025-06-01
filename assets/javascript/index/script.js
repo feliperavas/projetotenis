@@ -8,15 +8,9 @@ video.addEventListener("ended", () => {
     }, 30000); // 30 segundos em milissegundos
 });
 
-//Reponsivo menu
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.querySelector("#mobile-menu ul");
 
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
   });
-
-
-
-
