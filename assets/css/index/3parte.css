@@ -1,0 +1,36 @@
+/* Título acima da galeria */
+.corrida {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.corrida h1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Galeria de imagens */
+.galeria1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Imagens da galeria */
+.galeria1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.galeria1 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.rodape-wip {
+    background-color: #000000; /* Fundo escuro */
+    color: #f1f1f1; /* Texto claro */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.rodape-wip img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.rodape-wip .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}

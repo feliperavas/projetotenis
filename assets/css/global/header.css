@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    padding: 5px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.barra-de-pesquisa {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+    background-color: #e7e7e7;
+}
+
+.barra-de-pesquisa input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #e7e7e7;
+}
+
+.barra-de-pesquisa button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #e7e7e7;
+}
+
+.barra-de-pesquisa img {
+    width: 20px;
+    height: 20px;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.icones img {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.icones img:hover {
+    background-color: rgb(226, 226, 226);
+}
