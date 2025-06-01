@@ -8,7 +8,7 @@ video.addEventListener("ended", () => {
     }, 30000); // 30 segundos em milissegundos
 });
 
-  const toggle = document.getElementById("menu-toggle");
+ const toggle = document.getElementById("menu-toggle");
   const menu = document.querySelector("#mobile-menu ul");
 
   toggle.addEventListener("click", () => {

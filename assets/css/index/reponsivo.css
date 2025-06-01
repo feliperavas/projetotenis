@@ -1,26 +1,26 @@
-/* Esconde botão no desktop */
+/* Botão do menu só no mobile */
 .menu-toggle {
   display: none;
   font-size: 28px;
   background: none;
   border: none;
   cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
 }
 
-/* Estilo do menu no mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    margin-left: auto;
-    margin-top: 10px;
   }
 
   #mobile-menu ul {
     display: none;
     flex-direction: column;
-    padding: 10px 0;
-    background-color: #f9f9f9;
     width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
   }
 
   #mobile-menu ul.show {
@@ -28,7 +28,7 @@
   }
 
   #mobile-menu ul li {
-    margin: 10px 20px;
+    margin: 10px 0;
   }
 
   .Cabeçalho {
